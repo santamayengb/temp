@@ -37,7 +37,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
           children: [
             FutureBuilder<dynamic>(
               future: apiCall(
-                phone: int.parse(textController2.text),
+                name: textController1.text,
               ),
               builder: (context, snapshot) {
                 // Customize what your widget looks like when it's loading.
@@ -83,6 +83,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             FutureBuilder<dynamic>(
               future: apiCall(
                 phone: int.parse(textController2.text),
+                name: textController2.text,
               ),
               builder: (context, snapshot) {
                 // Customize what your widget looks like when it's loading.

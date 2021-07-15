@@ -1,8 +1,8 @@
 import 'api_manager.dart';
 
 Future<dynamic> apiCall({
-  String name = 'test',
-  int phone = test,
+  String name = '',
+  int phone,
 }) =>
     ApiManager.instance.makeApiCall(
       callName: 'api',
